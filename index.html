@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DevFolio Bootstrap Portfolio Template - Index</title>
+  <title>Josna Jose</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="https://toppng.com/uploads/preview/web-development-icon-png-clipart-website-development-web-dev-icon-11562967383vhxlfmnerz.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
@@ -481,17 +481,19 @@ and transactions.
                       </h5>
                     </div>
                     <div>
-                      <form id="submit-form" action="" method="post" role="form" class="php-email-form">
+                      <form id="submit-form" action="" role="form">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              <input name="name" class="form-control" id="contactName" placeholder="Your Name" onkeyup="validateName()">
                             </div>
+                            <span id="name"></span>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <input type="email" class="form-control" name="email" id="text1" placeholder="Your Email" onkeyup="validateEmail()">
                             </div>
+                            <span id="email"></span>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -503,13 +505,9 @@ and transactions.
                               <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                             </div>
                           </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                            <button type="submit" class="button button-a button-big button-rouded" onclick="return validateForm()">Send Message</button>
+                            <span id="submit-error"></span>
                           </div>
                         </div>
                       </form>
@@ -533,12 +531,13 @@ and transactions.
                     </div>
                     <div class="socials">
                       <ul>
-                        
-                        <li><a href="https://www.instagram.com/_j_o_s_n_a/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                       
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
                       </ul>
                     </div>
-                  </div>32
+                  </div>
                 </div>
               </div>
             </div>
@@ -555,6 +554,7 @@ and transactions.
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/js/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
